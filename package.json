@@ -1,0 +1,15 @@
+{
+  "name": "easy-logo-generator",
+  "version": "1.0.0",
+  "description": "This command-line application provides an easy to use generator that creates a logo used for projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
