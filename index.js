@@ -42,17 +42,17 @@ function generatedSVG(data) {
     if(data.shape =='circle') {
         return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
        <${data.shape} cx="150" cy="100" r="80" fill="${data.shapecolor}" />
-       <text x="150" y="125" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
+       <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
    </svg>`
    }else if(data.shape =='triangle'){
        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-       <polygon points="250,60 100,400 400,400"  fill="${data.shapecolor}" />
-       <text x="150" y="125" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
+       <polygon points="150, 18 244, 182 56, 182"  fill="${data.shapecolor}" />
+       <text x="154" y="160" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
    </svg>`
    }else if (data.shape =='square'){
        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-       <${data.shape} width="300" height="300" fill="${data.shapecolor}" />
-       <text x="150" y="125" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
+       <rect x="0" y="0" width="200" height="200" fill="${data.shapecolor}" />
+       <text x="103" y="120" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
    </svg>`
     }
 };
