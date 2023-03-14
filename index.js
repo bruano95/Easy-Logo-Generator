@@ -12,7 +12,7 @@ function init() {
             },
             {
                 type: "input",
-                name: "textcolor",
+                name: "textColor",
                 message: "What color would you like the text to be? Enter a color keyword OR a hexadecimal number:"
             },
             {
@@ -23,7 +23,7 @@ function init() {
             },
             {
                 type: "input",
-                name: "shapecolor",
+                name: "shapeColor",
                 message: "What color would you like the shape to be? Enter a color keyword OR a hexadecimal number:"
             }
         ]).
@@ -39,20 +39,20 @@ function init() {
 };
 
 function generatedSVG(data) {
-    if(data.shape =='circle') {
+    if(data.shape ==='circle') {
         return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-       <${data.shape} cx="150" cy="100" r="80" fill="${data.shapecolor}" />
-       <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
+       <${data.shape} cx="150" cy="100" r="80" fill="${data.shapeColor}" />
+       <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
    </svg>`
-   }else if(data.shape =='triangle'){
+   }else if(data.shape ==='triangle'){
        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-       <polygon points="150, 18 244, 182 56, 182"  fill="${data.shapecolor}" />
-       <text x="154" y="160" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
+       <polygon points="150, 18 244, 182 56, 182"  fill="${data.shapeColor}" />
+       <text x="154" y="160" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
    </svg>`
-   }else if (data.shape =='square'){
+   }else if (data.shape ==='square'){
        return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-       <rect x="0" y="0" width="200" height="200" fill="${data.shapecolor}" />
-       <text x="103" y="120" font-size="60" text-anchor="middle" fill="${data.textcolor}">${data.text}</text>
+       <rect x="0" y="0" width="200" height="200" fill="${data.shapeColor}" />
+       <text x="103" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
    </svg>`
     }
 };
